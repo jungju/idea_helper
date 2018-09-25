@@ -1,0 +1,5 @@
+C:\Documents and Settings\Jeongzu\My Documents\Visual Studio 2008\Projects\SilverlightApplication1\SilverlightApplication1.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jeongzu\My Documents\Visual Studio 2008\Projects\SilverlightApplication1\SilverlightApplication1.Web\bin\SilverlightApplication1.Web.dll
+C:\Documents and Settings\Jeongzu\My Documents\Visual Studio 2008\Projects\SilverlightApplication1\SilverlightApplication1.Web\bin\SilverlightApplication1.Web.pdb
+C:\Documents and Settings\Jeongzu\My Documents\Visual Studio 2008\Projects\SilverlightApplication1\SilverlightApplication1.Web\obj\Debug\SilverlightApplication1.Web.dll
+C:\Documents and Settings\Jeongzu\My Documents\Visual Studio 2008\Projects\SilverlightApplication1\SilverlightApplication1.Web\obj\Debug\SilverlightApplication1.Web.pdb

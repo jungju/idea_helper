@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="SilverlightApplication1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480" Loaded="UserControl_Loaded">
+	<UserControl.Resources>
+		<Storyboard x:Name="btnHL">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="btAllStop" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.415"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41499999165534973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="btStop1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.415"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41499999165534973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="btStop2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.415"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41499999165534973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="btStop3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.415"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41499999165534973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="btGo" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.415"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41499999165534973"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+  <Canvas x:Name="LayoutRoot">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup"/>
+		</VisualStateManager.VisualStateGroups>
+		<Image Height="480" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="640" Source="as.PNG" Stretch="Fill"/>
+		<Path x:Name="btAllStop" Fill="#FFF20000" Stretch="Fill" Stroke="White" Height="34.5" Width="38.25" Opacity="0.275" UseLayoutRounding="False" Data="M49.333595,418.77203 L36.486103,451.4559 L60.896343,452.22794 L73.743835,419.5441 z" Canvas.Left="37" Canvas.Top="419.25" MouseLeftButtonDown="BtnMouseDown" StrokeThickness="2"/>
+		<Path x:Name="btStop1" Fill="#FFF20000" Stretch="Fill" Stroke="White" Height="34" Width="57.75" Opacity="0.275" UseLayoutRounding="False" Data="M106.6875,421.51517 L96.76339,454.22729 L143.33035,454.48486 L153.50893,422.2879 z" Canvas.Left="96.25" Canvas.Top="421" MouseLeftButtonDown="BtnMouseDown" StrokeThickness="2"/>
+		<Path x:Name="btStop2" Fill="#FFF20000" Stretch="Fill" Stroke="White" Height="33.5" Width="53.25" Opacity="0.275" UseLayoutRounding="False" Data="M182,422 L175.25491,454.51614 L222.41177,454.51614 L227.50981,422.7742 z" Canvas.Left="174.75" Canvas.Top="421.5" MouseLeftButtonDown="BtnMouseDown" StrokeThickness="2"/>
+		<Path x:Name="btStop3" Fill="#FFF20000" Stretch="Fill" Stroke="White" Height="34.505" Width="49.393" Opacity="0.275" UseLayoutRounding="False" Data="M256,422 L254.745,454.7742 L301.89111,455.55392 L303.08612,423.29587 z" Canvas.Left="254.25" Canvas.Top="421.5" MouseLeftButtonDown="BtnMouseDown" StrokeThickness="2"/>
+		<Path x:Name="btGo" Fill="#FFF20000" Stretch="Fill" Stroke="White" Height="32.75" Width="56" Opacity="0.275" UseLayoutRounding="False" Data="M557.55933,421.59998 L569.25427,453.22858 L612.47461,451.17145 L599.25421,422.3714 z" Canvas.Left="557" Canvas.Top="421" MouseLeftButtonDown="BtnMouseDown" StrokeThickness="2"/>
+		<Border x:Name="S1" Height="155" Width="79" Canvas.Left="73" Canvas.Top="173">
+			<Border.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF888888" Offset="0"/>
+					<GradientStop Color="White" Offset="0.166"/>
+					<GradientStop Color="#FF7E7E7E" Offset="1"/>
+					<GradientStop Color="#FFE4E4E4" Offset="0.827"/>
+				</LinearGradientBrush>
+			</Border.Background>
+		</Border>
+		<Border x:Name="S2" Height="155" Width="79" Canvas.Left="177" Canvas.Top="173">
+			<Border.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF888888" Offset="0"/>
+					<GradientStop Color="White" Offset="0.166"/>
+					<GradientStop Color="#FF7E7E7E" Offset="1"/>
+					<GradientStop Color="#FFE4E4E4" Offset="0.827"/>
+				</LinearGradientBrush>
+			</Border.Background>
+		</Border>
+		<Border x:Name="S3" Height="155" Width="79" Canvas.Left="281" Canvas.Top="173">
+			<Border.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF888888" Offset="0"/>
+					<GradientStop Color="White" Offset="0.166"/>
+					<GradientStop Color="#FF7E7E7E" Offset="1"/>
+					<GradientStop Color="#FFE4E4E4" Offset="0.827"/>
+				</LinearGradientBrush>
+			</Border.Background>
+		</Border>
+	</Canvas>
+</UserControl>
